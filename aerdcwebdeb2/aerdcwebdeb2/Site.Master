@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="aerdcwebdeb2.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="Style.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            text-align: left;
+        }
+        .menu-container {
+            display: flex;
+        }
+        .vertical-menu {
+            width: 200px;
+            background-color: #7795BD;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .vertical-menu li {
+            text-align: center;
+        }
+        .vertical-menu a {
+            color: white;
+            display: block;
+            padding: 4px;
+            text-decoration: none;
+        }
+        .vertical-menu a:hover {
+            background-color: #3366FF;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <header class="banner">
+            <div class="banner-image">
+                <img src="Images/Banner_image.png" alt="Banner Image" />
+            </div>
+        </header>
+        <div>
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" CssClass="Menu" OnMenuItemClick="Menu1_MenuItemClick1" style="background-color: #3366FF">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="#" Text="About us" Value="New Item"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="#" Text="Projects" Value="New Item">
+                            <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item">
+                                <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="#" Text="IMM" Value="New Item">
+                            <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="#" Text="Outsourcing" Value="New Item">
+                            <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="#" Text="Manufacture" Value="New Item"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="#" Text="Testbed" Value="New Item">
+                            <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item">
+                                <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="#" Text="IMM" Value="New Item">
+                            <asp:MenuItem NavigateUrl="#" Text="New Item" Value="New Item"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <br />
+            </div>
+             <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer-content">
+            <footer class="footer">
+                <div class="auto-style1">
+                    Site Developed by AERDC, IT Department
+                    &copy; 2023</div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

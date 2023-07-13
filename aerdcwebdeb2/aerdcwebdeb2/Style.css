@@ -1,0 +1,89 @@
+﻿.banner {
+    background-color: navy;
+    padding: 20px;
+}
+
+.footer {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+/* This Section Deals with the Menu Items Design */
+
+.menu-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.Menu ul {
+    background: #1A5B82;
+    list-style: none;
+    padding: 0;
+}
+
+.Menu ul li {
+    background: #1A5B82;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.Menu ul li a {
+    color: white;
+    padding: 10px;
+    border: none;
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #1A5B82, #0F3A51);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Menu ul li a:hover {
+    background-color: #387AA6;
+    background: linear-gradient(to bottom, #387AA6, #1A5B82);
+}
+
+.Menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.vertical-menu {
+    width: 100px;
+    background-color: #7795BD;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-menu li {
+    text-align: center;
+}
+
+.vertical-menu a {
+    color: white;
+    display: block;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #3366FF;
+}
+
+.iframe-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
